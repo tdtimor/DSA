@@ -26,12 +26,13 @@ int main() {
     }
     cout<<"Array before sorting:"<<endl;
     for(int i=0;i<n;i++){
-        cout<<arr[i]<<endl;
+        cout<<arr[i]<<" ";
     }
+    cout<<endl;
     bubbleSort(arr, n);
     cout<<"Array after sorting:"<<endl;
     for(int i=0;i<n;i++){
-        cout<<arr[i]<<endl;
+        cout<<arr[i]<<" ";
     }
     return 0;
 }

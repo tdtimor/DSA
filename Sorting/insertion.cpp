@@ -1,8 +1,8 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-void insertionSort(vector<int> &arr, int n) {
-    for (int i = 1; i < n; i++) {
+void insertionSort(vector<int> &arr) {
+    for (int i = 1; i < arr.size(); i++) {
         int key = arr[i];
         int j = i - 1;
         
@@ -30,8 +30,7 @@ int main() {
         cout<<arr[i]<<" ";
     }
     cout<<endl;
-    insertionSort(arr, n);
-    
+    insertionSort(arr);
     cout << "Array after sorting:"<<endl;
     for (int i = 0; i < n; i++) {
         cout << arr[i] << " ";
